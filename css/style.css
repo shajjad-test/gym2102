@@ -490,8 +490,167 @@ ul{
     color: #fff;
     font-size: 24px;
 }
+/* =======================
+    gallery css ends 
+======================= */
+#team{
+    padding-bottom: 50px;
+}
+#team .team-item{
+   margin-right: 30px;
+   margin-top: 55px;
+   transition: all linear 0.4s;
+   -webkit-transition: all linear 0.4s;
+   -moz-transition: all linear 0.4s;
+   -ms-transition: all linear 0.4s;
+   -o-transition: all linear 0.4s;
+}
+
+#team .team-item:hover{
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+#team .team-item .card{
+    border-color: transparent !important ;
+}
+
+#team .team-item:hover .card{
+    border-color: #ddd !important;
+}
 
 
+#team .team-image{
+    position: relative;
+}
+
+#team .team-image .team-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(226, 62, 56, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-item:hover .team-overlay{
+    opacity: 1;
+}
+
+#team .team-image .team-overlay ul li{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#team .team-image .team-overlay ul li:last-child{
+    margin-bottom: 0;
+}
+
+#team .team-image .team-overlay ul li a{
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+#team .team-image .team-overlay ul li a::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-image .team-overlay ul li a:hover::after{
+    width: 100%;
+}
+
+#team .team-image .team-overlay i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-image .team-overlay ul li:first-child:hover i{
+    color: 	#4267B2;
+}
+#team .team-image .team-overlay ul li:nth-child(2):hover i{
+    color: 	#1DA1F2
+}
+#team .team-image .team-overlay ul li:last-child:hover i{
+    color: 	#2867b2;
+}
+
+#team .team-item .card-title{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--hcol);
+}
+
+#team .team-item h6{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pcol);
+}
+
+#team .team-item .card-text{
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--pcol);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#team .team-item:hover .card-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =======================
+    team css ends 
+======================= */
 
 
 
